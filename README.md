@@ -186,7 +186,7 @@ Copy code
 ## Demo Video
 
 The demonstration recording is located at:  
-`sample/demo.mp4`
+[Click to open demo video](sample/demo.mp4)
 
 ---
 
