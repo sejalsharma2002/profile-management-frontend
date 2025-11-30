@@ -1,9 +1,4 @@
 # Profile Management System — Frontend
-
-![GitHub stars](https://img.shields.io/github/stars/sejalsharma2002/profile-management-frontend?style=flat)
-![GitHub issues](https://img.shields.io/github/issues/sejalsharma2002/profile-management-frontend)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
-
 A cross-platform Profile Management application built using **React Native (Expo)** and **TypeScript**, supporting:
 
 - Web (Desktop + Responsive Mode)
@@ -11,7 +6,7 @@ A cross-platform Profile Management application built using **React Native (Expo
 
 This frontend communicates securely with the FastAPI backend using JWT authentication.
 
-> This project is part of a full-stack assignment. It demonstrates modern UI practices, client-side authentication management, responsive design, and a smooth user experience.
+> This project is part of a full-stack assignment. It demonstrates modern UI, client-side authentication, responsive design, and smooth user experience.
 
 ---
 
@@ -55,8 +50,7 @@ This frontend fulfills the required assignment objectives, including:
 | UI Styling | Custom inline theming (Tailwind-inspired) |
 | State Management | React Hooks (useState, useEffect) |
 | Local Storage | AsyncStorage |
-| API Communication | Fetch (with response handling + typed objects) |
-| Animation | React Native Animated API |
+| API Communication | Fetch (with response handling) |
 
 ---
 
@@ -66,7 +60,7 @@ This frontend fulfills the required assignment objectives, including:
 - **Reusable UI components** (`Button`, `Input`, `Tab`) ensure clean code organization.
 - **API abstraction (`api.ts`)** enables switching between mobile and web environments automatically.
 - **Animated screen switching** improves UX without heavy libraries.
-- **Client-side validation and real-time feedback**, including live profile strength scoring, reduces backend load.
+- **Client-side validation/ real-time feedback**, including live profile strength scoring, reduces backend load.
 
 ---
 
@@ -80,11 +74,6 @@ This frontend fulfills the required assignment objectives, including:
 - [x] Profile updating (PUT `/profile/me`)
 - [x] Animated and responsive UI
 - [x] Profile strength feature (bonus)
-
-### Optional / Pending
-- [ ] Password reset system
-- [ ] Deployment-ready build script
-
 ---
 
 ## Setup Instructions
@@ -178,15 +167,13 @@ The demonstration recording is located at:
 
 | Task | Estimated Duration |
 |------|--------------------|
-| Expo & TypeScript Setup | 1 hr |
-| UI Layout + Styling | 3 hrs |
-| Authentication Logic | 3 hrs |
-| Profile Management | 2 hrs |
-| Bonus Features | 1 hr |
-| Debugging (Web + Mobile) | 2 hrs |
-| Documentation + Cleanup | 1 hr |
+| Expo & TypeScript Setup | 3 hr |
+| UI | 5 hrs |
+| backend debugging | 3 hrs |
+| Debugging (Web + Mobile) | 5 hrs |
+| Documentation + Cleanup | 4 hr |
 
-Total Estimated Time: **13 hours**
+Total Estimated Time: **20 hours**
 
 ---
 
