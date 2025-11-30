@@ -23,7 +23,7 @@ This frontend communicates securely with the FastAPI backend using JWT authentic
 - [Screenshots](#screenshots)
 - [Demo Video](#demo-video)
 - [Time Spent](#time-spent)
-- [Future Improvements](#future-improvements)
+- [Limitations](#limitations)
 
 ---
 
@@ -88,6 +88,8 @@ cd profile-management-frontend
 ```bash
 npm install
 ```
+
+### 3. Backend service must be running before using the frontend.
 ---
 
 ## Environment Setup
@@ -99,7 +101,7 @@ import { Platform } from "react-native";
 let API_BASE = "http://127.0.0.1:8000"; // for web
 
 if (Platform.OS === "android") {
-API_BASE = "http://YOUR_LOCAL_IP:8000";
+API_BASE = "http://YOUR_LOCAL_IP:8000"; // your own Local_Ip check from command prompt 
 }
 
 export { API_BASE };
@@ -108,17 +110,19 @@ export { API_BASE };
 Notes:
 
 - Replace `YOUR_LOCAL_IP` with your laptop's network IP.
+```bash
+ipconfig
+```
 - Laptop and mobile must be on the same Wi-Fi for Expo to connect.
 
 ---
-
 ## Running the App
 
 Start Expo:
 ```bash
 npx expo start
 ```
-Then choose:
+### Then choose/ press key / scan:
 
 | Platform | Method |
 |----------|--------|
@@ -144,7 +148,7 @@ Then choose:
 
 - Validation warnings for missing or bad input.
 - Network failure detection.
-- Custom toast-style alerts for success, info, and errors.
+- Custom alerts for success, info, and errors.
 
 ---
 
@@ -176,10 +180,34 @@ The demonstration recording is located at:
 Total Estimated Time: **20 hours**
 
 ---
+## Limitations
 
-## Future Improvements
+This frontend implementation fulfills the majority of the expected functionality from the Full Stack Assignment. However, based on the original specification document, a few items were either simplified or not included due to time constraints and scope decisions.
 
-- Add Forgot Password + Email OTP
-- Add Language Switching + Theme Mode
-- Deploy Backend + Frontend for public cloud testing
-- Convert reusable elements into UI component library
+### Styling Framework Requirement
+
+- The assignment requested **NativeWind/Tailwind CSS integration**, but the current UI uses **custom inline React Native styles** inspired by Tailwind utilities
+  > because of error occuring in Babel file which could not be verified in mean time.
+- The app is responsive and styled well, but does not technically use the required CSS framework.
+
+### Configuration Limitations
+
+- Switching between **Web mode and Android mode** requires manual updating of `API_BASE` to match device IP (e.g., laptop IP for mobile testing).  
+  A fully automated environment detection system was not implemented.
+
+---
+
+### Summary
+
+These limitations do **not affect the core working flow**:
+
+✔ Sign Up  
+✔ Login  
+✔ JWT storage and restore  
+✔ Secure API communication  
+✔ Profile read/update  
+✔ Bonus: Profile strength indicator  
+
+All primary requirements are functional — the above points represent enhancement opportunities for future versions.
+
+---
