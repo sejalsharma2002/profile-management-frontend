@@ -221,6 +221,6 @@ These limitations do **not affect the core working flow**:
 ✔ Profile read/update  
 ✔ Bonus: Profile strength indicator  
 
-All primary requirements are functional — the above points represent enhancement opportunities for future versions.
+All primary requirements are functional.
 
 ---
