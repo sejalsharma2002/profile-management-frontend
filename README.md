@@ -90,35 +90,31 @@ This frontend fulfills the required assignment objectives, including:
 ## Setup Instructions
 
 ### 1. Clone Repository
-
+```bash
 git clone https://github.com/sejalsharma2002/profile-management-frontend.git
 cd profile-management-frontend
-
-shell
-Copy code
+```
 
 ### 2. Install Dependencies
-
+```bash
 npm install
-
-yaml
-Copy code
-
+```
 ---
 
 ## Environment Setup
 
 Update `api.ts` to choose correct backend URL:
+```bash
 import { Platform } from "react-native";
 
-let API_BASE = "http://127.0.0.1:8000"; // for web and emulator
+let API_BASE = "http://127.0.0.1:8000"; // for web
 
 if (Platform.OS === "android") {
 API_BASE = "http://YOUR_LOCAL_IP:8000";
 }
 
 export { API_BASE };
-
+```
 
 Notes:
 
@@ -130,12 +126,9 @@ Notes:
 ## Running the App
 
 Start Expo:
-
+```bash
 npx expo start
-
-yaml
-Copy code
-
+```
 Then choose:
 
 | Platform | Method |
@@ -168,18 +161,9 @@ Then choose:
 
 ## Screenshots
 
-Desktop Login UI:  
-`sample/desktop.png`
-
-Mobile View UI:  
-`sample/mobile.jpg`
-
-Add image inside GitHub using:
-
-
-
-yaml
-Copy code
+Desktop | Mobile
+--------|--------
+![Desktop View](sample/Screenshots_browser/web-login.png) | ![Mobile View](sample/Screenshots_mobile/login.jpeg)
 
 ---
 
