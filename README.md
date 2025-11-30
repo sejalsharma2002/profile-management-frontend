@@ -21,6 +21,7 @@ This frontend communicates securely with the FastAPI backend using JWT authentic
 - [Running the App](#running-the-app)
 - [Application Flow](#application-flow)
 - [Screenshots](#screenshots)
+- [Backend Link](#backend-link)
 - [Demo Video](#demo-video)
 - [Time Spent](#time-spent)
 - [Limitations](#limitations)
@@ -158,8 +159,20 @@ Desktop | Mobile
 --------|--------
 ![Desktop View](sample/Screenshots_browser/web-login.png) | ![Mobile View](sample/Screenshots_mobile/login.jpeg)
 
+
+- [Browse Desktop Screenshots](sample/Screenshots_browser/)
+- [Browse Mobile Screenshots](sample/Screenshots_mobile/)
+
 ---
 
+## Backend Link
+
+The backend used in this project is also open-source:
+
+Backend Repository:
+https://github.com/sejalsharma2002/profile-management-backend
+
+---
 ## Demo Video
 
 The demonstration recording is located at:  
